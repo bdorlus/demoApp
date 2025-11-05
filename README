@@ -1,0 +1,37 @@
+# DemoApp – AI Ping Service (Starter)
+
+A tiny FastAPI service to demo AI-powered endpoints later.  
+Right now it does one thing, and does it well:
+
+> ✅ `GET /status` → returns `{"status": "ok", "app": "DemoApp"}`
+
+This keeps the surface area small for a workshop, but gives you a clean path to bolt on AI tools (CodeX, etc.) later.
+
+---
+
+## Tech Stack
+
+- **Language:** Python 3.x
+- **Framework:** FastAPI
+- **Server:** Uvicorn
+- **Env Isolation:** `python -m venv` (virtual environment)
+- **Build/Run:** `Makefile` with simple targets:
+  - `make build`
+  - `make install`
+  - `make run`
+
+---
+
+## Project Layout
+
+Keeping it intentionally shallow:
+
+```bash
+DemoApp/
+├── app/
+│   ├── __init__.py
+│   └── main.py       # FastAPI app + /status endpoint
+├── requirements.txt
+├── Makefile
+└── README.md
+
